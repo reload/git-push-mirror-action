@@ -2,4 +2,4 @@
 
 set -eu
 
-git push --mirror "$(eval echo "$*")"
+git push --mirror "$@"
