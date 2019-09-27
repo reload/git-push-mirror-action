@@ -1,7 +1,7 @@
 FROM alpine/git:1.0.7
 
 LABEL "com.github.actions.name"="Git Push Mirror"
-LABEL "com.github.actions.description"="Pushes your repos to a git mirror (git push --mirror)"
+LABEL "com.github.actions.description"="Push your checkout to a git mirror (git push --mirror)"
 LABEL "com.github.actions.icon"="share-2"
 LABEL "com.github.actions.color"="purple"
 
