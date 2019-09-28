@@ -23,7 +23,7 @@ jobs:
     - uses: actions/checkout@master
       with:
         ref: master
-    - name: Prepare repository # actions/checkout leaves teh repos in a detached HEAD state, see https://github.com/actions/checkout/issues/6
+    - name: Prepare repository # actions/checkout leaves the repos in a detached HEAD state, see https://github.com/actions/checkout/issues/6
       run: git checkout master
     - name: Push to mirror
       uses: reload/git-push-mirror-action@master
