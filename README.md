@@ -12,19 +12,21 @@ mess up the checkout.
 This is the workflow file we use:
 
 ```yaml
-on: push
+on:
+  push:
+    branches:
+    - master
 name: Push to Bitbucket
 jobs:
   push_to_bitbucket:
     name: Push to Bitbucket
-    if: github.ref == 'refs/heads/master' && !github.event.deleted
+    if: "!github.event.deleted"
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@v2-beta
       with:
+        fetch-depth: 0 # Zero indicates all history
         ref: master
-    - name: Prepare repository # actions/checkout leaves the repos in a detached HEAD state, see https://github.com/actions/checkout/issues/6
-      run: git checkout master
     - name: Push to mirror
       uses: reload/git-push-mirror-action@master
       with:
