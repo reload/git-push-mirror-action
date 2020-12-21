@@ -1,4 +1,4 @@
-FROM alpine/git:1.0.23
+FROM alpine/git:1.0.24
 
 LABEL "com.github.actions.name"="Git Push Mirror"
 LABEL "com.github.actions.description"="Push your checkout to a git mirror (git push --mirror)"
