@@ -5,8 +5,8 @@ LABEL "com.github.actions.description"="Push your checkout to a git mirror (git 
 LABEL "com.github.actions.icon"="share-2"
 LABEL "com.github.actions.color"="purple"
 
-LABEL "repository"="http://github.com/reload/git-push-mirror-action"
-LABEL "homepage"="http://github.com/reload/git-push-mirror-action"
+LABEL "repository"="https://github.com/reload/git-push-mirror-action"
+LABEL "homepage"="https://github.com/reload/git-push-mirror-action"
 LABEL "maintainer"="Reload A/S <info@reload.dk>"
 
 WORKDIR /github/workspace
